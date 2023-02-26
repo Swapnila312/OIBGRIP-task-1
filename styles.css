@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*navigation bar*/
+
+.mynav {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.mynav-header {
+    display: inline;
+}
+
+.mynav-logo {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.mynav-title {
+    display: inline-block;
+    position: relative;
+    left: 8%;
+}
+
+.mynav-logo>img {
+    height: 65px;
+    width: 100px;
+}
+
+.mynav-btn {
+    display: none;
+}
+
+.mynav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+.mynav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.mynav-links>a:hover {
+    color: rgb(118, 29, 29);
+    background-color: white;
+    font-weight: bold;
+}
+
+#mynav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .mynav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mynav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .mynav-btn>label:hover {
+        color: rgb(118, 29, 29);
+        background-color: white;
+        font-weight: bold;
+    }
+
+    .mynav #mynav-check:checked~.mynav-btn>label {
+        color: rgb(118, 29, 29);
+        background-color: white;
+        font-weight: bold;
+    }
+
+    .mynav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .mynav>.mynav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+    }
+
+    .mynav>.mynav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .mynav>#mynav-check:not(:checked)~.mynav-links {
+        height: 0px;
+    }
+
+    .mynav>#mynav-check:checked~.mynav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    div.about-us{
+        background-image: url(images/main-page2.jpg);
+    }
+    h1.main-heading{
+        padding-left: 6rem;
+    }
+    #info-img{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    div.sec-3 {
+        background-image: url(images/last-img2.jpg);
+        height: 40rem;
+    }
+}
+
+.about-us {
+    background-image: url(images/main-page.jpg);
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.main-heading {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding: 10rem 2rem 0rem 10rem;
+}
+
+.main-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 22px;
+}
+
+.main-btn {
+    margin-left: 2rem;
+    justify-content: center;
+}
+
+/*info*/
+.info {
+    padding: 5%;
+}
+
+.sub-heading {
+    font-size: 2.4rem;
+}
+
+.info-content {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+#info-img {
+    height: 18.75rem;
+    width: 28.125rem;
+    padding-left: 2rem;
+}
+
+/*section 3*/
+.sec-3 {
+    background-image: url(images/last-img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 31.25rem;
+    color: white;
+}
+
+.sub-heading2 {
+    font-family: 'Merriweather', serif;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    padding: 6rem 2rem 0rem 5rem;
+}
+
+.sec3-content {
+    padding: 2rem 2rem 2rem 5rem;
+    font-size: 1.375rem;
+}
+
+.sec3-btn {
+    margin-left: 5rem;
+    justify-content: center;
+}
+
+/*menu*/
+.card-img {
+    height: 300px;
+    padding: 1rem;
+}
+
+.menu-heading {
+    font-size: 2.4rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.menu-content {
+    font-size: 1.2rem;
+    padding: 1rem 0 2rem 2rem;
+}
+
+/*Features*/
+.feature-head {
+    color: brown;
+}
+
+.feature-box {
+    text-align: center;
+}
+
+.feature-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.feature-content {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2rem;
+}
+
+.feature-foot {
+    color: brown;
+    text-align: center;
+}
+
+/*footer*/
+
+.footer-data {
+    background-color: #300E07;
+    color: white;
+    padding: 4% 4% 2% 4%;
+}
+
+.footer-head {
+    font-size: 1.5rem;
+}
+
+.footer-content {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.font-icon {
+    padding-right: 1rem;
+}
+
+#foot-end {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+
+.social-icons {
+    margin: 20px 10px;
+}

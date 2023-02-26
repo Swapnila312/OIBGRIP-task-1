@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Yourself</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/676d2a923c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Nav bar-->
+    <div class="mynav">
+        <input type="checkbox" id="mynav-check">
+        <div class="mynav-header">
+            <div class="mynav-logo">
+                <img src="images/logo.jpg" alt="logo">
+                <h3 class="mynav-title">The Coffee House</h3>
+            </div>
+        </div>
+        <div class="mynav-btn">
+            <label for="mynav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="mynav-links">
+            <a href="#about">About us</a>
+            <a href="#order">Order Now</a>
+            <a href="#contact-us">Contact us</a>
+            <a href="">Sign in | Sign up</a>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div class="about-us row" id="about">
+        <div class="col-lg-6">
+            <h1 class="main-heading">COFFEE</h1>
+            <p class="main-content">It is best to start your day with a cup of coffee. Discover the best flavours coffee
+                you will ever
+                have. <br> We provide the best for our customers.
+            </p>
+            <button type="button" class="btn btn-lg btn-outline-light main-btn"><i class="fa-solid fa-mug-hot"></i>
+                Order Now</button>
+            <button type="button" class="btn btn-lg btn-outline-light main-btn"><i
+                    class="fa-regular fa-circle-play"></i> Watch Now</button>
+        </div>
+    </div>
+
+    <!--More about coffee-->
+    <div class="row info">
+        <div class="col-lg-7">
+            <h2 class="sub-heading">Discover <br> the best coffee</h2>
+            <p class="info-content">
+                The coffee house is a coffee shop that provides you with quality coffee that helps boost your
+                productivity and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee
+                is geater. There is no doubt that you will enjoy this coffee more than others you have ever tasted.
+            </p>
+        </div>
+        <div class="col-lg-5 info-img-sec">
+            <img src="images/coffeeimg.jpg" alt="coffee" id="info-img">
+        </div>
+    </div>
+    <!--section 3-->
+    <div class="sec-3 row">
+        <div class="col-lg-6">
+            <h1 class="sub-heading2">Get a chance to have an <br>Amazing morning </h1>
+            <p class="sec3-content">We are giving you an one time opportunity to <br>experience a better life with
+                coffee.</p>
+            <button type="button" class="btn btn-lg btn-outline-light sec3-btn"><i class="fa-solid fa-mug-hot"></i>
+                Order Now</button>
+        </div>
+    </div>
+    <!--menu-->
+    <div class="menu" id="order">
+        <h2 class="menu-heading">Enjoy a new blend of coffee style</h2>
+        <p class="menu-content">Explore all flavours of coffee with us. There is always a new cup worth experiencing.
+        </p>
+
+        <!--coffee cards-->
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img" src="images/latte.jpeg" alt="Latte">
+                <div class="card-body">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text"><small class="text-muted">Espresso , Steamed milk</small></p>
+                    <button type="button" class="btn btn-md btn-dark btn-outline-light menu-btn"><i
+                            class="fa-solid fa-mug-hot"></i>
+                        Order Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/Cappuccino.jpeg" alt="Cappuccino">
+                <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text"><small class="text-muted">Espresso , Steamed milk , Foam</small></p>
+                    <button type="button" class="btn btn-md btn-dark btn-outline-light menu-btn"><i
+                            class="fa-solid fa-mug-hot"></i>
+                        Order Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/americano.jpeg" alt="Americano">
+                <div class="card-body">
+                    <h5 class="card-title">Americano</h5>
+                    <p class="card-text"><small class="text-muted">Espresso , Hot water</small></p>
+                    <button type="button" class="btn btn-md btn-dark btn-outline-light menu-btn"><i
+                            class="fa-solid fa-mug-hot"></i>
+                        Order Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="images/mocha.jpg" alt="Mocha Caramel">
+                <div class="card-body">
+                    <h5 class="card-title">Mocha caramel</h5>
+                    <p class="card-text"><small class="text-muted">Espresso , Steamed milk , Whipped Cream ,
+                            Caramel</small></p>
+                    <button type="button" class="btn btn-md btn-dark btn-outline-light menu-btn"><i
+                            class="fa-solid fa-mug-hot"></i>
+                        Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--features-->
+    <div class="features">
+        <h2 class="menu-heading">Why are we different?</h2>
+        <p class="menu-content">We dont't just make your coffee, we make your day!</p>
+
+        <div class="row menu">
+            <div class="col-lg-3 feature-box">
+                <img src="images/coffee-beans.png" alt="Supreme beans" class="feature-icon">
+                <h3 class="feature-head">Supreme Beans</h3>
+                <p>Beans that provides <br>great taste.</p>
+            </div>
+            <div class="col-lg-3 feature-box">
+                <img src="images/award.png" alt="High quality" class="feature-icon">
+                <h3 class="feature-head">High Quality</h3>
+                <p>We provide the<br>highest quality.</p>
+            </div>
+            <div class="col-lg-3 feature-box">
+                <img src="images/coffee-cup.png" alt="Extraordinary" class="feature-icon">
+                <h3 class="feature-head">Extraordinary</h3>
+                <p>Coffee like you have<br>never tasted.</p>
+            </div>
+            <div class="col-lg-3 feature-box">
+                <img src="images/best-price.png" alt="Affordable Price" class="feature-icon">
+                <h3 class="feature-head">Affordable Price</h3>
+                <p>Our coffee prices are<br>easy to afford.</p>
+            </div>
+        </div>
+        <p class="feature-content">Great ideas start with great coffee, Let's help you acheive that</p>
+        <h3 class="feature-foot">Get Started today.</h3>
+    </div>
+    <!--footer-->
+    <div class="footer-data row">
+        <div class="col-lg-7">
+            <h2 class="footer-head">The Coffee House</h2>
+            <p class="footer-content">We are The Coffee House that serve many variant of coffee, special milkshakes &
+                delicious dessert based on highest quality ingredients and best service.</p>
+        </div>
+        <div class="col-lg-5">
+            <h2 class="footer-head">Contact info</h2>
+            <p class="footer-content"><i class="fa-solid fa-envelope font-icon"></i>coffeehouse@gmail.com</p>
+            <p class="footer-content"><i class="fa-solid fa-location-dot font-icon"></i>Odisha-India,752055</p>
+        </div>
+        <hr>
+        <footer id="footer">
+            <i class="social-icons fa-brands fa-facebook"></i>
+            <i class="social-icons fa-brands fa-twitter"></i>
+            <i class="social-icons fa-brands fa-instagram"></i>
+            <i class="social-icons fa-solid fa-envelope"></i>
+        </footer>
+        <p id="foot-end"><i class="fa-regular fa-copyright font-icon"></i>Designed by Swapnila Srivastava.</p>
+    </div>
+</body>
+
+</html>
